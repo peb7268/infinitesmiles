@@ -20,6 +20,14 @@ Text Domain: Avada
 .group:after {
   clear: both;
 }
+
+body, p, a, h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/*-- Custom Fonts --*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,800';
+
 /*
 Needed Styles From Bootstrap
 -----------------------------------------------------------------------------*/
@@ -16797,7 +16805,7 @@ table {
   margin: 0 auto;
 }
 
-
+/*-- Edits 2016 */
 .header-info .social {
     position: absolute;
     top: 15px;
@@ -16818,4 +16826,75 @@ table {
 }
 .header-info .social li:first-child a {
     font-size: 14pt;
+}
+
+/*-- Office Info Page --*/
+.page-id-16 #content { width: 100%; margin: 0 0 70px;}
+.office_wrapper { overflow: hidden; }
+.office_wrapper #office_info {
+  float: left;
+  width: 35%;
+  margin: 0 2% 0 0;
+}
+.office_wrapper iframe {
+  float: right;
+    width: 60%;
+    margin: 69px 0 0 0;
+    border: 1px solid #999 !important;
+    background: #fff;
+    padding: 7px;
+}
+
+.office_wrapper #address, .office_wrapper #office_hours {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #999;
+  background: #eee;
+}
+
+.office_wrapper #address li, .office_wrapper #office_hours li {
+  list-style: none;
+  padding: 6px 15px 4px;
+  border-right: 1px solid #999;
+  border-left: 1px solid #999;
+}
+
+.office_wrapper #address li:first-child, .office_wrapper #office_hours li:first-child {
+  padding: 6px 7px 4px;
+  background: #67b7e1;
+  color: #fff;
+}
+
+.review_link {
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+.review_link a {
+  display: block;
+  color: #fff;
+  background: #29A036;
+  border-radius: 2px;
+  padding: 4px;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 1px solid #013b01;
+}
+
+.review_link a:hover { 
+  cursor: pointer; 
+}
+
+@media only screen and (max-device-width: 480px) {
+  .office_wrapper #office_info {
+    float: none;
+    width: 98%;
+    margin: 0 auto 25px;
+  }
+  .office_wrapper iframe {
+    float: none;
+    width: 98%;
+    margin: 0 auto;
+  }
 }

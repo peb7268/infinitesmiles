@@ -1,4 +1,8 @@
 <?php
+
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+
 // Translation
 add_action( 'after_setup_theme', 'avada_load_textdomain' );
 function avada_load_textdomain(){
