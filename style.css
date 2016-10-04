@@ -16886,6 +16886,55 @@ table {
   cursor: pointer; 
 }
 
+/* -- Gallery -- */
+.page-id-10 #content { width: 100%; }
+
+.gallery {
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#gallery_nav {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#gallery_nav li {
+  list-style: none;
+}
+
+#gallery_nav li:nth-child(1) a { background: #0966a9; }
+#gallery_nav li:nth-child(2) a, #gallery_nav li a.active { background: #67b7e1; }
+
+#gallery_nav li a {
+  display: block;
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 7px;
+  color: #fff;
+}
+
+#canvas {}
+
+#canvas .photos {
+  display: none;
+}
+
+#shade { 
+  background: rgba(0, 0, 0, .7); 
+  height: 100%; 
+  width: 100%; 
+  position: fixed; 
+  top: -100%; 
+  left: 0; 
+}
+
 @media only screen and (max-device-width: 480px) {
   .office_wrapper #office_info {
     float: none;

@@ -1004,7 +1004,14 @@ function avada_scripts() {
 		wp_deregister_style('woocommerce-general');
 	}
 }
+
+function galleryjs(){
+	wp_register_script('gallery', get_template_directory_uri().'/js/gallery.js');
+	wp_enqueue_script('gallery');
+}
+
 add_action('wp_enqueue_scripts', 'avada_scripts');
+add_action('wp_enqueue_scripts', 'galleryjs');
 
 add_filter('jpeg_quality', 'avada_image_full_quality');
 add_filter('wp_editor_set_quality', 'avada_image_full_quality');
